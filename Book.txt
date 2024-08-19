@@ -1,0 +1,29 @@
+use libraryDB;
+
+// Insert books into the "books" collection
+db.books.insertMany([
+  {
+    title: "Ponniyin Selvan",
+    author: "Kalki Krishnamoorthi",
+    availability: true,
+    status: "Available"
+  },
+  {
+    title: "Wings of Fire",
+    author: "Abdul Kalam A.P.J",
+    availability: false,
+    status: "Checked Out"
+  },
+  {
+    title: "Vekkai",
+    author: "Vetrimaaran",
+    availability: true,
+    status: "Available"
+  },
+  {
+    title: "Silappathigaaram",
+    author: "Thangalaan",
+    availability: false,
+    status: "Reserved"
+  }
+]);

@@ -1,0 +1,75 @@
+use eventManagementDB;
+db.events.insertMany([
+  {
+    eventId: "1",
+    eventName: "Diwali Celebration",
+    date: "2024-11-04",
+    location: "Community Hall",
+    registrations: [
+      {
+        participantName: "Kumar",
+        registrationId: "1",
+        attendance: true
+      },
+      {
+        participantName: "Priya",
+        registrationId: "2",
+        attendance: false
+      }
+    ]
+  },
+  {
+    eventId: "2",
+    eventName: "Yoga Workshop",
+    date: "2024-09-21",
+    location: "City Park",
+    registrations: [
+      {
+        participantName: "Vikram",
+        registrationId: "R003",
+        attendance: true
+      },
+      {
+        participantName: "Amar",
+        registrationId: "R004",
+        attendance: true
+      }
+    ]
+  },
+  {
+    eventId: "3",
+    eventName: "Art Exhibition",
+    date: "2024-12-10",
+    location: "Art Gallery",
+    registrations: [
+      {
+        participantName: "Madan Gowri",
+        registrationId: "5",
+        attendance: false
+      },
+      {
+        participantName: "Nandha Kumar",
+        registrationId: "6",
+        attendance: true
+      }
+    ]
+  },
+  {
+    eventId: "4",
+    eventName: "Music Concert",
+    date: "2024-08-25",
+    location: "Concert Hall",
+    registrations: [
+      {
+        participantName: "Rohan",
+        registrationId: "7",
+        attendance: true
+      },
+      {
+        participantName: "Saindhavi",
+        registrationId: "8",
+        attendance: false
+      }
+    ]
+  }
+]);

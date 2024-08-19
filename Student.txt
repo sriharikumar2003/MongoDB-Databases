@@ -1,0 +1,46 @@
+// Use your database
+use studentManagementDB;
+
+// Insert students into the "students" collection
+db.students.insertMany([
+  {
+    rollNo: "100",
+    name: "Fan of Mongo",
+    age: 20,
+    email: "mongoman09@gmail.com",
+    courses: [
+      { courseName: "DSA", instructor: "Dr. Bharani" },
+      { courseName: "Full Stack Development", instructor: "Prof. Dharan" }
+    ]
+  },
+  {
+    rollNo: "101",
+    name: "Rocky",
+    age: 22,
+    email: "Rocky.brand@gmail.com",
+    courses: [
+      { courseName: "DSA", instructor: "Dr. Bharani" },
+      { courseName: "Full Stack Development", instructor: "Prof. Dharan" }
+    ]
+  },
+  {
+    rollNo: "102",
+    name: "Bakkiyaraj",
+    age: 21,
+    email: "baaku.itsme@gmail.com",
+    courses: [
+      { courseName: "DSA", instructor: "Dr. Bharani" },
+      { courseName: "Full Stack Development", instructor: "Prof. Dharan" }
+    ]
+  },
+  {
+    rollNo: "103",
+    name: "Arun Pasupathi",
+    age: 23,
+    email: "father.cow10@gmail.com",
+    courses: [
+      { courseName: "DSA", instructor: "Dr. Bharani" },
+      { courseName: "Full Stack Development", instructor: "Prof. Dharan" }
+    ]
+  }
+]);
